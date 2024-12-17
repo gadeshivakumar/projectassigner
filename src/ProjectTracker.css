@@ -1,0 +1,94 @@
+/* General Styles */
+.project-tracker {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin-top: 10vh;
+}
+
+h1,
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.project-section {
+  margin-bottom: 30px;
+}
+
+.project-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.project-item {
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-item span {
+  display: block;
+}
+
+.btn-accept,
+.btn-complete {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.btn-complete {
+  background-color: green;
+}
+
+.btn-accept:hover,
+.btn-complete:hover {
+  opacity: 0.8;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .project-tracker {
+    padding: 15px;
+  }
+
+  .project-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn-accept,
+  .btn-complete {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  .project-item {
+    padding: 10px;
+  }
+
+  .btn-accept,
+  .btn-complete {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
